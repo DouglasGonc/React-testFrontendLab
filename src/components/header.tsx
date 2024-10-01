@@ -4,10 +4,14 @@ import styled from 'styled-components';
 interface HeaderProps { }
 
 const TagHeader = styled.header`
-    
-`
-const FlexHeader = styled.section`
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 126;
+    padding: 0 40px;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 `
 const ButtonContato = styled.a`
 
@@ -17,21 +21,12 @@ export function Header(props : HeaderProps){
     return(
         <TagHeader>
             <section>
-                <FlexHeader style={{ height: '39px' }}>
-                    <div>
-                        
-                    </div>
-                    <div>
-                        
-                    </div>
-                </FlexHeader>
-            </section>
-            <section>
-                <FlexHeader>
-                    <div>
-                        <ButtonContato>Entre em contato</ButtonContato>
-                    </div>
-                </FlexHeader>
+                <div>
+                    1
+                </div>
+                <div>
+                    2
+                </div>
             </section>
         </TagHeader>
     )
